@@ -1,0 +1,5 @@
+--- a/services/art-service/src/routes/chapter.routes.js
++++ b/services/art-service/src/routes/chapter.routes.js
+@@
+-    const [[art]] = await db.query('SELECT * FROM arts WHERE id=? AND authoOrDev_id=?', [req.params.artId, req.user.id]);
++    const [[art]] = await db.query('SELECT * FROM arts WHERE id=? AND authorOrDev_id=?', [req.params.artId, req.user.id]);
